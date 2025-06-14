@@ -1,0 +1,239 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API Documentation",
+    "version": "1.0.0",
+    "description": "Auto-generated API documentation from API Mapper"
+  },
+  "servers": [
+    {
+      "url": "https://api.boliga.dk"
+    }
+  ],
+  "paths": {
+    "/api/v2/sold/search/results": {
+      "get": {
+        "summary": "GET /api/v2/sold/search/results",
+        "operationId": "getapiv2soldsearchresults",
+        "description": "Endpoint: GET /api/v2/sold/search/results\nTotal calls captured: 3\n\n## Example Requests\n\n### Example 1\n\n```bash\ncurl -X GET \\\n  'https://api.boliga.dk/api/v2/sold/search/results?searchTab=1&propertyType=2&salesDateMin=2025&sizeMin=50&sizeMax=300&roomsMin=1&roomsMax=6&buildYearMin=1950&buildYearMax=2020&priceMin=100000&priceMax=1500000&zipcodeFrom=2670&zipcodeTo=4000&municipality=265&saleType=2&page=1&sort=date-d' \\\n  -H 'Accept: application/json, text/plain, */*' \\\n  -H 'DNT: 1' \\\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'\n```\n\n**Response Status:** 200\n\n### Example 2\n\n```bash\ncurl -X GET \\\n  'https://api.boliga.dk/api/v2/sold/search/results?municipality=undefined&street=undefined' \\\n  -H 'Accept: application/json, text/plain, */*' \\\n  -H 'DNT: 1' \\\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'\n```\n\n**Response Status:** 200\n\n## Query Parameters\n\n- `municipality`\n- `street`\n- `searchTab`\n- `propertyType`\n- `salesDateMin`\n- `sizeMin`\n- `sizeMax`\n- `roomsMin`\n- `roomsMax`\n- `buildYearMin`\n- `buildYearMax`\n- `priceMin`\n- `priceMax`\n- `zipcodeFrom`\n- `zipcodeTo`\n- `saleType`\n- `page`\n- `sort`\n\n## Custom Headers\n\n- `sec-ch-ua-platform`\n- `sec-ch-ua`\n- `DNT`\n- `sec-ch-ua-mobile`\n\n",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "name": "municipality",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "examples": {
+              "example1": {
+                "value": "undefined",
+                "summary": "Example value 1"
+              },
+              "example2": {
+                "value": "265",
+                "summary": "Example value 2"
+              }
+            }
+          },
+          {
+            "name": "street",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "undefined"
+          },
+          {
+            "name": "searchTab",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1"
+          },
+          {
+            "name": "propertyType",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "2"
+          },
+          {
+            "name": "salesDateMin",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "2025"
+          },
+          {
+            "name": "sizeMin",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "50"
+          },
+          {
+            "name": "sizeMax",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "300"
+          },
+          {
+            "name": "roomsMin",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1"
+          },
+          {
+            "name": "roomsMax",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "6"
+          },
+          {
+            "name": "buildYearMin",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1950"
+          },
+          {
+            "name": "buildYearMax",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "2020"
+          },
+          {
+            "name": "priceMin",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "100000"
+          },
+          {
+            "name": "priceMax",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1500000"
+          },
+          {
+            "name": "zipcodeFrom",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "2670"
+          },
+          {
+            "name": "zipcodeTo",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "4000"
+          },
+          {
+            "name": "saleType",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "2"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "date-d"
+          },
+          {
+            "name": "sec-ch-ua-platform",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          },
+          {
+            "name": "sec-ch-ua",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          },
+          {
+            "name": "DNT",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1"
+          },
+          {
+            "name": "sec-ch-ua-mobile",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {}
+  }
+}

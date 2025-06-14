@@ -1,0 +1,374 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API Documentation",
+    "version": "1.0.0",
+    "description": "Auto-generated API documentation from API Mapper"
+  },
+  "servers": [
+    {
+      "url": "https://api.boliga.dk"
+    }
+  ],
+  "paths": {
+    "/api/v2/search/results": {
+      "get": {
+        "summary": "GET /api/v2/search/results",
+        "operationId": "getapiv2searchresults",
+        "description": "Endpoint: GET /api/v2/search/results\nTotal calls captured: 2\n\n## Example Requests\n\n### Example 1\n\n```bash\ncurl -X GET \\\n  'https://api.boliga.dk/api/v2/search/results?pageSize=50&searchTab=0&sort=daysForSale-a&propertyType=1&so=0&priceMin=100000&roomsMin=1&sizeMin=50&lotSizeMin=500&basementSizeMin=20&businessAreaMin=1&floorMin=-1&buildYearMin=1930&sqmPriceMin=1000&expMin=1000&daysForSaleMin=7&energyClassMin=I&priceDevelopment=down&priceMax=6000000&roomsMax=6&sizeMax=350&lotSizeMax=7500&basementSizeMax=160&businessAreaMax=200&floorMax=6&buildYearMax=2010&sqmPriceMax=30000&expMax=15000&daysForSaleMax=730&energyClassMax=D&q=skov&openHouse=true&includeds=1&includeotw=1' \\\n  -H 'Accept: application/json, text/plain, */*' \\\n  -H 'DNT: 1' \\\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'\n```\n\n**Response Status:** 200\n\n### Example 2\n\n```bash\ncurl -X GET \\\n  'https://api.boliga.dk/api/v2/search/results?pageSize=50&searchTab=0&sort=daysForSale-a&includeds=1&includeotw=1' \\\n  -H 'Accept: application/json, text/plain, */*' \\\n  -H 'DNT: 1' \\\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'\n```\n\n**Response Status:** 200\n\n## Query Parameters\n\n- `pageSize`\n- `searchTab`\n- `sort`\n- `includeds`\n- `includeotw`\n- `propertyType`\n- `so`\n- `priceMin`\n- `roomsMin`\n- `sizeMin`\n- `lotSizeMin`\n- `basementSizeMin`\n- `businessAreaMin`\n- `floorMin`\n- `buildYearMin`\n- `sqmPriceMin`\n- `expMin`\n- `daysForSaleMin`\n- `energyClassMin`\n- `priceDevelopment`\n- `priceMax`\n- `roomsMax`\n- `sizeMax`\n- `lotSizeMax`\n- `basementSizeMax`\n- `businessAreaMax`\n- `floorMax`\n- `buildYearMax`\n- `sqmPriceMax`\n- `expMax`\n- `daysForSaleMax`\n- `energyClassMax`\n- `q`\n- `openHouse`\n\n## Custom Headers\n\n- `sec-ch-ua-platform`\n- `sec-ch-ua`\n- `DNT`\n- `sec-ch-ua-mobile`\n\n",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "50"
+          },
+          {
+            "name": "searchTab",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "0"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "daysForSale-a"
+          },
+          {
+            "name": "includeds",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1"
+          },
+          {
+            "name": "includeotw",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1"
+          },
+          {
+            "name": "propertyType",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1"
+          },
+          {
+            "name": "so",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "0"
+          },
+          {
+            "name": "priceMin",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "100000"
+          },
+          {
+            "name": "roomsMin",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1"
+          },
+          {
+            "name": "sizeMin",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "50"
+          },
+          {
+            "name": "lotSizeMin",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "500"
+          },
+          {
+            "name": "basementSizeMin",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "20"
+          },
+          {
+            "name": "businessAreaMin",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1"
+          },
+          {
+            "name": "floorMin",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "-1"
+          },
+          {
+            "name": "buildYearMin",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1930"
+          },
+          {
+            "name": "sqmPriceMin",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1000"
+          },
+          {
+            "name": "expMin",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1000"
+          },
+          {
+            "name": "daysForSaleMin",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "7"
+          },
+          {
+            "name": "energyClassMin",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "I"
+          },
+          {
+            "name": "priceDevelopment",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "down"
+          },
+          {
+            "name": "priceMax",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "6000000"
+          },
+          {
+            "name": "roomsMax",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "6"
+          },
+          {
+            "name": "sizeMax",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "350"
+          },
+          {
+            "name": "lotSizeMax",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "7500"
+          },
+          {
+            "name": "basementSizeMax",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "160"
+          },
+          {
+            "name": "businessAreaMax",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "200"
+          },
+          {
+            "name": "floorMax",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "6"
+          },
+          {
+            "name": "buildYearMax",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "2010"
+          },
+          {
+            "name": "sqmPriceMax",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "30000"
+          },
+          {
+            "name": "expMax",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "15000"
+          },
+          {
+            "name": "daysForSaleMax",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "730"
+          },
+          {
+            "name": "energyClassMax",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "D"
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "skov"
+          },
+          {
+            "name": "openHouse",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "true"
+          },
+          {
+            "name": "sec-ch-ua-platform",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          },
+          {
+            "name": "sec-ch-ua",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          },
+          {
+            "name": "DNT",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1"
+          },
+          {
+            "name": "sec-ch-ua-mobile",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "This header contains sensitive data that was redacted"
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {}
+  }
+}
