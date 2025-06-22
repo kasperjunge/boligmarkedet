@@ -8,7 +8,7 @@ Formålet med dette projekt er at skabe en omfattende database med data over det
 ### Database
 - **Teknologi:** DuckDB
 - **Struktur:** Separate tabeller for aktive salg og solgte ejendomme
-- **Lokation:** Til start lokalt, senere eventuelt både lokalt og på server
+- **Lokation:** Lokalt
 - **Data retention:** Permanent opbevaring af alle historiske data
 - **Versioning:** Ændringer i ejendommenes status/pris gemmes som separate versioner (begge versioner bevares)
 
@@ -19,9 +19,7 @@ Formålet med dette projekt er at skabe en omfattende database med data over det
 - **Rate limiting:** Implementeres hvis nødvendigt for at undgå problemer
 
 ### Deployment
-- **Analyse:** Kører lokalt for ad-hoc dataanalyse
-- **Scraping updates:** Kører på server med Coolify for kontinuerlig dataopdatering
-- **Sync-strategi:** TBD (hvis database skal være både lokalt og på server)
+- **Analyse og opdatering:** Kører lokalt for både ad-hoc dataanalyse og kontinuerlig dataopdatering
 
 ## Data struktur
 - **Specifikke felter:** TBD (bliver bestemt når API-schema er undersøgt)
@@ -56,7 +54,7 @@ Formålet med dette projekt er at skabe en omfattende database med data over det
 ### Nuværende scope
 - Backend-only system (ingen web interface til start)
 - Kun adgang for projektejer
-- Kontinuerlig dataopdatering via scraping
+- Kontinuerlig dataopdatering via scraping, alt kører lokalt
 
 ### Fremtidigt scope
 - Muligt dashboard eller web interface
